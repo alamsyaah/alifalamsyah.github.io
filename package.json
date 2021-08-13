@@ -1,0 +1,25 @@
+{
+  "name": "alifalamsyah.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:styles": "sass --watch src/style.scss assets/style.css",
+    "dev": "http-server .",
+    "build:styles": "sass src/style.scss assets/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alamsyaah/alifalamsyah.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alamsyaah/alifalamsyah.github.io/issues"
+  },
+  "homepage": "https://github.com/alamsyaah/alifalamsyah.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.0"
+  }
+}
