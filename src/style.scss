@@ -5,8 +5,9 @@
     height: $size;
 }
 
-.flex-container {
+.profile-container {
     display: flex;
+    padding: 210px 148px 129px;
 
     .flex-4 {
         flex: 4;
@@ -15,22 +16,81 @@
     .flex-2 {
         flex: 2;
     }
+
+    .p-16 {
+        padding: 16px;
+    }
+
+    .hero-person {
+        @include square(240px);
+        background-color: aquamarine;
+        border-radius: 50%;
+        background-image: url('/assets/profile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: -5px 13px 0 0 #EDF7FA;
+    }
 }
 
-.hero-container {
-    padding: 210px 148px 129px;
+.desc-container {
+    display: flex;
+    background-color: #EDF7FA;
+    padding: 50px 148px 75px;
+
+    .detail-container {
+        flex-direction: column;
+        flex: 3;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 24px;
+    }
 }
 
-.hero-person {
-    @include square(240px);
-    background-color: aquamarine;
-    border-radius: 50%;
-    background-image: url('/assets/profile.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: -5px 13px 0 0 #EDF7FA;
+.exp-container {
+    padding: 50px 148px 75px;
+
+    .proj-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        border-bottom: 2px solid #E0E0E0;
+    }
+
+    .year {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        border-radius: 100px;
+        width: 50px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .title {
+        color: #8695A4;
+        font-weight: 400;
+        margin-left: 50px;
+    }
+
+    .desc {
+        margin-top: 15px;
+    }
 }
 
-.p-16 {
-    padding: 16px;
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+    .social-container {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
